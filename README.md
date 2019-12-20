@@ -1,5 +1,5 @@
 # jeep_subaru
-## Analysis of value retention between 2008 Jeep Libertys and 2008 Subaru Outbacks
+## Analysis of value and value retention between 2008 Jeep Libertys and 2008 Subaru Outbacks
 
 ### Project Scope
 
