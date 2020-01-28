@@ -36,15 +36,19 @@ I predicted that the Subarus would have a higher value due to one main factor: r
 
 ### Methods:
 
+#### Data Collection:
+
 Luckily I still have the original documents that I submitted for the class, because the process I used for collecting the data was absurdly strict and complicated. It did, however, do a relatively good job creating a strong randomization in the study.
 
-1. Label states 1-50 in alphabetical order. Perform a until 30 sample states have been selected.
+1. Label states 1-50 in alphabetical order. Perform a simple random sample until 30 sample states have been selected.
 2. Find Carmax location for the state. If there are multiple locations in state, do SRS with the states ordered 1-x as read top-bottom on the webside and select the location that the SRS elects. If there is no Carmax in the state, do a 1-50 SRS until a state that has not yet been selected is drawn, then use that state to replace the aforementioned state in the sample. Record the zip code for each location.
 3. Plug the previously selected zip code into CarGuru with 50 mile radius with search criteria: 2008 Subaru Outback; and 2008 Jeep Liberty, respectively.
 4. Select first vehicle that matches criteria; record price and odometer reading.
     * CRITERIA: Must be within state. Must be a 2008 model. Select the first vehicle (top-bottom reading of website) between 80,000 and 120,000 miles. If none within that range appear with the search criteria, pick the next closest odometer reading. No Subaru Outback XTs.
 5. Repeat steps 3 and 4 with each zip code in the size-30 sample.
 6. Perform analysis...
+
+#### Data Analysis:
 
 
 
