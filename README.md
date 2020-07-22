@@ -3,7 +3,7 @@
 
 ### Project Context
 
-During my first college statistics class, I decided to look at used-car sale values between two cars that still flood the streets of Denver: a Jeep Liberty, and a Subaru Outback. I originally wanted to look at earlier models (2002-2007), because those are actually a lot more common, but the website I used for the data collection (cargurus.com) didn't sell cars that old. So, I settled for the 2008s.
+During my first college statistics course, I decided to look at used-car sale values between two cars that still flood the streets of Denver: a Jeep Liberty, and a Subaru Outback. I originally wanted to look at earlier models (2002-2007), because those are actually a lot more common, but the website I used for the data collection (cargurus.com) didn't sell cars that old. So, I settled for the 2008s.
 
 The initial project was a simple analysis of the means and standard deviations for used sales prices between the two cars. However, I decided to keep track of other information such as mileage because I thought it would be interesting to explore the correlations between milage and asking price. In the end I calculated some basic descriptive statistics (means, stds, etc.), ran a t-test or two, and put it on a poster to present for the class.
 
@@ -34,7 +34,7 @@ There is no statistically significant difference between the used asking-price o
 Despite the statement of the null-hypothesis, I did predict that the Subarus would have a higher value due to one main factor: reliability. As a Colorado native I grew up driving and riding in old Jeeps--and I loved them to death--but they seemed to break down nearly religiously. Not only this, but their transmissions seemed to go out at ~120k miles like clockwork; and, when people's transmissions go out, they sometimes tend to sell their cars.
 
 
-### Methods:
+### Methods
 
 #### Data Collection:
 
@@ -49,3 +49,46 @@ Luckily I still have the original documents that I submitted for the class, beca
 6. Perform analysis...
 
 #### Data Analysis:
+
+Most of the data analysis for this project was exploratory. Although I was still pursuing the original goal of exploring how the two cars matched up against eachother, I was also enjoying simply learning about Python and modules in Python (e.g. Numpy, Pandas, Matplotlib, etc.), while also synthesizing the knowlege I had about statistics and data analysis with my developing CS skills.
+
+All data analysis was accomplished using Python & Python modules. Data display & visualization were executed using Pandas and Matplotlib; distributions, t-tests, & linear regression were accomplished utilizing Numpy & Scipy.stats. All of the data analysis was co-completed by djdebonis (David J DeBonis) & mathematicalmichael (Michael Pilosov). 
+
+### Results
+
+#### Descriptive Statistics:
+
+From the sample data set, 30 2008 Jeep Libertys and 30 2008 Subaru Outbacks from similar zip codes in 30 states were analyzed. The Jeep Libertys had a mean odometer reading of 104626.97 miles with a standard deviation of 16025.69 miles; the Subaru Outbacks had a mean odometer reading of 109269.37 miles with a standard deviation of 22754.72 miles. A 2-sample t-test (p < 0.10) between the mean odometer readings of the Jeep Libertys and the Subaru Outbacks determined that there is not enough evidence to support that there is a statistically significant difference between the odometer readings (t-stat = 0.9136; p = 0.3647). Therefore, we can precede with the assumption that odometer reading was not a major confounding variable in the experiment, and thus that diferences in asking price are likely due to other factors.
+
+The Jeep Libertys had a mean asking price of $8169.23 with a standard deviation of $1112.19, while the Subarus had a mean asking price of $9381.53 with a standard deviation of $1618.68. Although there is a clear difference in the mean asking prices, there is also a clear difference in the standard deviations. However, when the asking price standard deviations are compared with the odometer reading standard deviations,  the proportion of standard deviations from Jeep to Subaru for price (0.68709) and for mileage (0.70427) are almost identical; this shows that the fact that the Subarus have a larger standard deviation (wider spread) of price than the Jeeps is likely not because of some inherent factor in the car or the market, but can instead be explained almost entirely by the odometer differences that happened to come through on this sample. 
+
+### Charts!
+
+#### Histogram of miles comparing Jeeps and Subarus:
+
+![figures/miles_hist.png](figures/miles_hist.png)
+
+#### Normal Distributions of miles comparing Jeeps and Subarus:
+
+![figures/miles_dist.png](figures/miles_hist.png)
+
+#### Histogram of price comparing Jeeps and Subarus:
+
+![figures/price_hist.png](figures/price_hist.png)
+
+#### Normal Distributions of price comparing Jeeps and Subarus:
+
+![figures/price_dist.png](figures/price_hist.png)
+
+#### Scatterplot of mileage & price comparing Jeeps and Subarus:
+
+![figures/miles_price_scatter.png](figures/miles_price_scatter.png)
+
+#### Regression of mileage & price comparing Jeeps and Subarus:
+
+![figures/miles_price_regression.png](figures/miles_price_regression.png)
+
+#### Visual check for heteroscedasticity on regressions:
+
+![figrues/heteroscedasticity.png](figrues/heteroscedasticity.png)
+
