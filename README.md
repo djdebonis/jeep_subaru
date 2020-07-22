@@ -1,6 +1,46 @@
 # jeep_subaru
 ## Analysis of value and value retention between 2008 Jeep Libertys and 2008 Subaru Outbacks
 
+### Repo
+
+This repo takes the data I collected for a project in my Intro to Statistics course my freshman year and assesses it more in-depth. Most of the results are printed/commented in MD in [the notebook](jeepsubaruanalysis.ipynb). For more information about the context of this project, read below in [Project Overview](#project-overview).
+
+### Notebook
+
+Notebook is cells of all procedural coding. No classes & hardly any functions are defined. However, the code is well commented, so it should be easy to follow.
+
+### Charts!
+
+#### Histogram of miles comparing Jeeps and Subarus:
+
+![figures/miles_hist.png](figures/miles_hist.png)
+
+#### Normal Distributions of miles comparing Jeeps and Subarus:
+
+![figures/miles_dist.png](figures/miles_hist.png)
+
+#### Histogram of price comparing Jeeps and Subarus:
+
+![figures/price_hist.png](figures/price_hist.png)
+
+#### Normal Distributions of price comparing Jeeps and Subarus:
+
+![figures/price_dist.png](figures/price_hist.png)
+
+#### Scatterplot of mileage & price comparing Jeeps and Subarus:
+
+![figures/miles_price_scatter.png](figures/miles_price_scatter.png)
+
+#### Regression of mileage & price comparing Jeeps and Subarus:
+
+![figures/miles_price_regression.png](figures/miles_price_regression.png)
+
+#### Visual check for heteroscedasticity on regressions:
+
+![figrues/heteroscedasticity.png](figrues/heteroscedasticity.png)
+
+## Project Overview
+
 ### Project Context
 
 During my first college statistics course, I decided to look at used-car sale values between two cars that still flood the streets of Denver: a Jeep Liberty, and a Subaru Outback. I originally wanted to look at earlier models (2002-2007), because those are actually a lot more common, but the website I used for the data collection (cargurus.com) didn't sell cars that old. So, I settled for the 2008s.
@@ -61,34 +101,3 @@ All data analysis was accomplished using Python & Python modules. Data display &
 From the sample data set, 30 2008 Jeep Libertys and 30 2008 Subaru Outbacks from similar zip codes in 30 states were analyzed. The Jeep Libertys had a mean odometer reading of 104626.97 miles with a standard deviation of 16025.69 miles; the Subaru Outbacks had a mean odometer reading of 109269.37 miles with a standard deviation of 22754.72 miles. A 2-sample t-test (p < 0.10) between the mean odometer readings of the Jeep Libertys and the Subaru Outbacks determined that there is not enough evidence to support that there is a statistically significant difference between the odometer readings (t-stat = 0.9136; p = 0.3647). Therefore, we can precede with the assumption that odometer reading was not a major confounding variable in the experiment, and thus that diferences in asking price are likely due to other factors.
 
 The Jeep Libertys had a mean asking price of $8169.23 with a standard deviation of $1112.19, while the Subarus had a mean asking price of $9381.53 with a standard deviation of $1618.68. Although there is a clear difference in the mean asking prices, there is also a clear difference in the standard deviations. However, when the asking price standard deviations are compared with the odometer reading standard deviations,  the proportion of standard deviations from Jeep to Subaru for price (0.68709) and for mileage (0.70427) are almost identical; this shows that the fact that the Subarus have a larger standard deviation (wider spread) of price than the Jeeps is likely not because of some inherent factor in the car or the market, but can instead be explained almost entirely by the odometer differences that happened to come through on this sample. 
-
-### Charts!
-
-#### Histogram of miles comparing Jeeps and Subarus:
-
-![figures/miles_hist.png](figures/miles_hist.png)
-
-#### Normal Distributions of miles comparing Jeeps and Subarus:
-
-![figures/miles_dist.png](figures/miles_hist.png)
-
-#### Histogram of price comparing Jeeps and Subarus:
-
-![figures/price_hist.png](figures/price_hist.png)
-
-#### Normal Distributions of price comparing Jeeps and Subarus:
-
-![figures/price_dist.png](figures/price_hist.png)
-
-#### Scatterplot of mileage & price comparing Jeeps and Subarus:
-
-![figures/miles_price_scatter.png](figures/miles_price_scatter.png)
-
-#### Regression of mileage & price comparing Jeeps and Subarus:
-
-![figures/miles_price_regression.png](figures/miles_price_regression.png)
-
-#### Visual check for heteroscedasticity on regressions:
-
-![figrues/heteroscedasticity.png](figrues/heteroscedasticity.png)
-
