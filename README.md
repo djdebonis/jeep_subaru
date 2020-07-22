@@ -9,35 +9,35 @@ This repo takes the data I collected for a project in my Intro to Statistics cou
 
 Notebook is cells of all procedural coding. No classes & hardly any functions are defined. However, the code is well commented, so it should be easy to follow.
 
-### Charts!
+## Charts!
 
-#### Histogram of miles comparing Jeeps and Subarus:
+### Histogram of miles comparing Jeeps and Subarus:
 
 ![figures/miles_hist.png](figures/miles_hist.png)
 
-#### Normal Distributions of miles comparing Jeeps and Subarus:
+### Normal Distributions of miles comparing Jeeps and Subarus:
 
 ![figures/miles_dist.png](figures/miles_hist.png)
 
-#### Histogram of price comparing Jeeps and Subarus:
+### Histogram of price comparing Jeeps and Subarus:
 
 ![figures/price_hist.png](figures/price_hist.png)
 
-#### Normal Distributions of price comparing Jeeps and Subarus:
+### Normal Distributions of price comparing Jeeps and Subarus:
 
 ![figures/price_dist.png](figures/price_hist.png)
 
-#### Scatterplot of mileage & price comparing Jeeps and Subarus:
+### Scatterplot of mileage & price comparing Jeeps and Subarus:
 
 ![figures/miles_price_scatter.png](figures/miles_price_scatter.png)
 
-#### Regression of mileage & price comparing Jeeps and Subarus:
+### Regression of mileage & price comparing Jeeps and Subarus:
 
 ![figures/miles_price_regression.png](figures/miles_price_regression.png)
 
-#### Visual check for heteroscedasticity on regressions:
+### Visual check for heteroscedasticity on regressions:
 
-![figrues/heteroscedasticity.png](figrues/heteroscedasticity.png)
+![figrues/heteroscedasticity.png](figures/heteroscedasticity.png)
 
 ## Project Overview
 
